@@ -10,6 +10,6 @@
         <module name="unicorn.main" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel target="19" />
+    <bytecodeTargetLevel target="15" />
   </component>
 </project>
