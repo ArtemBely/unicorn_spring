@@ -13,10 +13,16 @@ repositories {
 }
 
 dependencies {
-    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
-    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
+    //implementation 'org.slf4j:slf4j-api:1.7.30'
+    compileOnly 'org.projectlombok:lombok:1.18.4'
+    annotationProcessor 'org.projectlombok:lombok:1.18.4'
     // Jackson Encode && Decode JSON
-    implementation 'io.github.openfeign:feign-jackson'
+    //implementation 'io.github.openfeign:feign-jackson'
     implementation 'org.modelmapper:modelmapper:3.1.1'
     implementation 'io.github.openfeign:feign-jackson:9.3.1'
     //Generovani Swagger na zaklade rest api
@@ -25,9 +31,13 @@ dependencies {
     implementation 'org.postgresql:postgresql:42.4.3'
     //JPA for psql
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa:2.7.8'
-    implementation 'org.slf4j:slf4j-api:1.7.30'
-    compileOnly 'org.projectlombok:lombok:1.18.4'
-    annotationProcessor 'org.projectlombok:lombok:1.18.4'
+    //ModelMapper
+    implementation 'org.modelmapper:modelmapper:3.1.1'
+    //Validacce vstupnich dat
+    implementation 'org.springframework.boot:spring-boot-starter-validation'
+    testImplementation 'org.awaitility:awaitility:4.2.0'
+    //work with excel
+    implementation 'org.apache.poi:poi-ooxml:5.2.3'
 }
 
 test {

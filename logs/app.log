@@ -1,34 +1,152 @@
-2023-03-07 16:53:44,789 INFO org.example.Main [main] Starting Main using Java 15.0.10 on nb0188 with PID 13148 (C:\Users\belysheva\IdeaProjects\unicorn\build\classes\java\main started by belysheva in C:\Users\belysheva\IdeaProjects\unicorn)
-2023-03-07 16:53:44,794 INFO org.example.Main [main] No active profile set, falling back to default profiles: default
-2023-03-07 16:53:45,430 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-03-07 16:53:45,497 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 49 ms. Found 1 JPA repository interfaces.
-2023-03-07 16:53:46,319 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-03-07 16:53:46,482 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.4.30.Final
-2023-03-07 16:53:46,925 INFO org.hibernate.annotations.common.Version [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2023-03-07 16:53:47,125 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
-2023-03-07 16:53:47,449 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
-2023-03-07 16:53:47,473 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
-2023-03-07 16:53:49,343 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-03-07 16:53:49,364 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-03-07 16:53:49,383 WARN org.springframework.context.annotation.AnnotationConfigApplicationContext [main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'personController' defined in file [C:\Users\belysheva\IdeaProjects\unicorn\build\classes\java\main\org\example\controllers\PersonController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'personService' defined in file [C:\Users\belysheva\IdeaProjects\unicorn\build\classes\java\main\org\example\services\PersonService.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'personMapper' defined in file [C:\Users\belysheva\IdeaProjects\unicorn\build\classes\java\main\org\example\data\mapper\PersonMapper.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.modelmapper.ModelMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
-2023-03-07 16:53:49,383 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Closing JPA EntityManagerFactory for persistence unit 'default'
-2023-03-07 16:53:49,388 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Shutdown initiated...
-2023-03-07 16:53:49,773 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Shutdown completed.
-2023-03-07 16:53:49,794 INFO org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener [main] 
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2023-03-07 16:53:49,831 ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter [main] 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Parameter 0 of constructor in org.example.data.mapper.PersonMapper required a bean of type 'org.modelmapper.ModelMapper' that could not be found.
-
-
-Action:
-
-Consider defining a bean of type 'org.modelmapper.ModelMapper' in your configuration.
-
+2023-03-07 20:12:39,070 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.1.7.Final
+2023-03-07 20:12:39,092 INFO org.example.Main [main] Starting Main using Java 15.0.10 on nb0188 with PID 2924 (C:\Users\belysheva\IdeaProjects\unicorn\build\classes\java\main started by belysheva in C:\Users\belysheva\IdeaProjects\unicorn)
+2023-03-07 20:12:39,094 INFO org.example.Main [main] No active profile set, falling back to default profiles: default
+2023-03-07 20:12:39,782 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-07 20:12:39,859 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 65 ms. Found 1 JPA repository interfaces.
+2023-03-07 20:12:40,581 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-07 20:12:40,643 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.4.30.Final
+2023-03-07 20:12:41,049 INFO org.hibernate.annotations.common.Version [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-03-07 20:12:42,705 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2023-03-07 20:12:43,040 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-03-07 20:12:43,061 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+2023-03-07 20:12:43,981 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-07 20:12:43,994 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-07 20:12:44,471 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler [main] Initializing ExecutorService 'taskScheduler'
+2023-03-07 20:12:44,500 INFO org.example.Main [main] Started Main in 5.955 seconds (JVM running for 7.666)
+2023-03-07 20:12:44,503 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler [SpringContextShutdownHook] Shutting down ExecutorService 'taskScheduler'
+2023-03-07 20:12:44,506 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [SpringContextShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-03-07 20:12:44,508 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-03-07 20:12:44,515 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown completed.
+2023-03-07 20:14:07,549 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.1.7.Final
+2023-03-07 20:14:07,572 INFO org.example.Main [main] Starting Main using Java 15.0.10 on nb0188 with PID 15192 (C:\Users\belysheva\IdeaProjects\unicorn\build\classes\java\main started by belysheva in C:\Users\belysheva\IdeaProjects\unicorn)
+2023-03-07 20:14:07,573 INFO org.example.Main [main] No active profile set, falling back to default profiles: default
+2023-03-07 20:14:08,143 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-07 20:14:08,200 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 47 ms. Found 1 JPA repository interfaces.
+2023-03-07 20:14:08,736 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-07 20:14:08,797 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.4.30.Final
+2023-03-07 20:14:08,960 INFO org.hibernate.annotations.common.Version [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-03-07 20:14:09,090 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2023-03-07 20:14:09,361 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-03-07 20:14:09,381 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+2023-03-07 20:14:10,215 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-07 20:14:10,228 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-07 20:14:10,741 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler [main] Initializing ExecutorService 'taskScheduler'
+2023-03-07 20:14:10,768 INFO org.example.Main [main] Started Main in 3.647 seconds (JVM running for 4.484)
+2023-03-07 20:14:10,772 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler [SpringContextShutdownHook] Shutting down ExecutorService 'taskScheduler'
+2023-03-07 20:14:10,775 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [SpringContextShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-03-07 20:14:10,777 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-03-07 20:14:10,783 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown completed.
+2023-03-07 20:19:53,269 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.1.7.Final
+2023-03-07 20:19:53,288 INFO org.example.Main [main] Starting Main using Java 15.0.10 on nb0188 with PID 12128 (C:\Users\belysheva\IdeaProjects\unicorn\build\classes\java\main started by belysheva in C:\Users\belysheva\IdeaProjects\unicorn)
+2023-03-07 20:19:53,288 INFO org.example.Main [main] No active profile set, falling back to default profiles: default
+2023-03-07 20:19:53,879 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-07 20:19:53,928 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 40 ms. Found 1 JPA repository interfaces.
+2023-03-07 20:19:54,432 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-07 20:19:54,487 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.4.30.Final
+2023-03-07 20:19:54,641 INFO org.hibernate.annotations.common.Version [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-03-07 20:19:54,778 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2023-03-07 20:19:55,035 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-03-07 20:19:55,054 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+2023-03-07 20:19:55,850 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-07 20:19:55,863 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-07 20:19:56,320 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler [main] Initializing ExecutorService 'taskScheduler'
+2023-03-07 20:19:56,346 INFO org.example.Main [main] Started Main in 3.517 seconds (JVM running for 4.528)
+2023-03-07 20:19:56,350 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler [SpringContextShutdownHook] Shutting down ExecutorService 'taskScheduler'
+2023-03-07 20:19:56,351 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [SpringContextShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-03-07 20:19:56,353 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-03-07 20:19:56,358 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown completed.
+2023-03-07 20:25:22,435 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.1.7.Final
+2023-03-07 20:25:22,463 INFO org.example.Main [main] Starting Main using Java 15.0.10 on nb0188 with PID 14472 (C:\Users\belysheva\IdeaProjects\unicorn\build\classes\java\main started by belysheva in C:\Users\belysheva\IdeaProjects\unicorn)
+2023-03-07 20:25:22,464 INFO org.example.Main [main] No active profile set, falling back to default profiles: default
+2023-03-07 20:25:23,046 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-07 20:25:23,096 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 40 ms. Found 1 JPA repository interfaces.
+2023-03-07 20:25:23,828 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2023-03-07 20:25:23,838 INFO org.apache.coyote.http11.Http11NioProtocol [main] Initializing ProtocolHandler ["http-nio-8080"]
+2023-03-07 20:25:23,839 INFO org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2023-03-07 20:25:23,839 INFO org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.45]
+2023-03-07 20:25:23,947 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+2023-03-07 20:25:23,947 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1440 ms
+2023-03-07 20:25:24,125 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-07 20:25:24,186 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.4.30.Final
+2023-03-07 20:25:24,366 INFO org.hibernate.annotations.common.Version [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-03-07 20:25:24,484 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2023-03-07 20:25:24,716 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-03-07 20:25:24,735 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+2023-03-07 20:25:25,446 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-07 20:25:25,458 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-07 20:25:25,900 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-07 20:25:25,999 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [main] Initializing ExecutorService 'applicationTaskExecutor'
+2023-03-07 20:25:27,127 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler [main] Initializing ExecutorService 'taskScheduler'
+2023-03-07 20:25:27,154 INFO org.apache.coyote.http11.Http11NioProtocol [main] Starting ProtocolHandler ["http-nio-8080"]
+2023-03-07 20:25:27,180 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2023-03-07 20:25:27,193 INFO org.example.Main [main] Started Main in 5.196 seconds (JVM running for 6.178)
+2023-03-07 20:25:54,581 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-07 20:25:54,582 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2023-03-07 20:25:54,583 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] Completed initialization in 1 ms
+2023-03-07 20:25:54,771 INFO org.example.controllers.PersonController [http-nio-8080-exec-1] start process insert person in controller: PersonDto(id=0, firstName=Jason, lastName=Bourn, age=30)
+2023-03-07 20:25:54,774 INFO org.example.services.PersonService [http-nio-8080-exec-1] start process insert person in services
+2023-03-07 20:25:54,818 INFO org.example.services.PersonService [http-nio-8080-exec-1] start process into db PersonEntity(id=0, firstName=Jason, lastName=Bourn, age=30)
+2023-03-07 20:25:54,908 INFO org.example.services.PersonService [http-nio-8080-exec-1] end process insert person in services
+2023-03-07 20:25:54,908 INFO org.example.controllers.PersonController [http-nio-8080-exec-1] end process insert person in controller: PersonDto(id=0, firstName=Jason, lastName=Bourn, age=30)
+2023-03-07 20:27:04,192 INFO org.example.controllers.PersonController [http-nio-8080-exec-5] start process insert person in controller: PersonDto(id=0, firstName=Tammy, lastName=Abraham, age=23)
+2023-03-07 20:27:04,192 INFO org.example.services.PersonService [http-nio-8080-exec-5] start process insert person in services
+2023-03-07 20:27:04,193 INFO org.example.services.PersonService [http-nio-8080-exec-5] start process into db PersonEntity(id=0, firstName=Tammy, lastName=Abraham, age=23)
+2023-03-07 20:27:04,196 INFO org.example.services.PersonService [http-nio-8080-exec-5] end process insert person in services
+2023-03-07 20:27:04,196 INFO org.example.controllers.PersonController [http-nio-8080-exec-5] end process insert person in controller: PersonDto(id=0, firstName=Tammy, lastName=Abraham, age=23)
+2023-03-07 20:27:40,894 INFO org.example.controllers.PersonController [http-nio-8080-exec-6] start process insert person in controller: PersonDto(id=0, firstName=Jose, lastName=Mourinho, age=60)
+2023-03-07 20:27:40,896 INFO org.example.services.PersonService [http-nio-8080-exec-6] start process insert person in services
+2023-03-07 20:27:40,897 INFO org.example.services.PersonService [http-nio-8080-exec-6] start process into db PersonEntity(id=0, firstName=Jose, lastName=Mourinho, age=60)
+2023-03-07 20:27:40,900 INFO org.example.services.PersonService [http-nio-8080-exec-6] end process insert person in services
+2023-03-07 20:27:40,901 INFO org.example.controllers.PersonController [http-nio-8080-exec-6] end process insert person in controller: PersonDto(id=0, firstName=Jose, lastName=Mourinho, age=60)
+2023-03-07 20:28:10,005 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler [SpringContextShutdownHook] Shutting down ExecutorService 'taskScheduler'
+2023-03-07 20:28:10,007 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
+2023-03-07 20:28:10,008 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [SpringContextShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-03-07 20:28:10,010 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-03-07 20:28:10,015 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown completed.
+2023-03-07 20:28:14,728 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.1.7.Final
+2023-03-07 20:28:14,755 INFO org.example.Main [main] Starting Main using Java 15.0.10 on nb0188 with PID 8384 (C:\Users\belysheva\IdeaProjects\unicorn\build\classes\java\main started by belysheva in C:\Users\belysheva\IdeaProjects\unicorn)
+2023-03-07 20:28:14,756 INFO org.example.Main [main] No active profile set, falling back to default profiles: default
+2023-03-07 20:28:15,368 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-07 20:28:15,419 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 41 ms. Found 1 JPA repository interfaces.
+2023-03-07 20:28:16,217 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2023-03-07 20:28:16,230 INFO org.apache.coyote.http11.Http11NioProtocol [main] Initializing ProtocolHandler ["http-nio-8080"]
+2023-03-07 20:28:16,231 INFO org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2023-03-07 20:28:16,231 INFO org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.45]
+2023-03-07 20:28:16,397 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+2023-03-07 20:28:16,398 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1595 ms
+2023-03-07 20:28:16,592 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-07 20:28:16,654 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.4.30.Final
+2023-03-07 20:28:16,845 INFO org.hibernate.annotations.common.Version [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-03-07 20:28:16,975 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2023-03-07 20:28:17,278 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-03-07 20:28:17,299 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+2023-03-07 20:28:18,117 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-07 20:28:18,129 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-07 20:28:18,608 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-07 20:28:18,707 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [main] Initializing ExecutorService 'applicationTaskExecutor'
+2023-03-07 20:28:19,943 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler [main] Initializing ExecutorService 'taskScheduler'
+2023-03-07 20:28:19,967 INFO org.apache.coyote.http11.Http11NioProtocol [main] Starting ProtocolHandler ["http-nio-8080"]
+2023-03-07 20:28:19,993 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2023-03-07 20:28:20,007 INFO org.example.Main [main] Started Main in 5.73 seconds (JVM running for 6.748)
+2023-03-07 20:28:30,052 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-07 20:28:30,052 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-2] Initializing Servlet 'dispatcherServlet'
+2023-03-07 20:28:30,053 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-2] Completed initialization in 1 ms
+2023-03-07 20:28:30,087 WARN org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver [http-nio-8080-exec-2] Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'id' for method parameter type int is not present]
+2023-03-07 20:29:05,707 INFO org.example.controllers.PersonController [http-nio-8080-exec-4] start to find id: 1 
+2023-03-07 20:29:05,708 INFO org.example.services.PersonService [http-nio-8080-exec-4] Find certain person
+2023-03-07 20:29:05,798 INFO org.example.controllers.PersonController [http-nio-8080-exec-4] person found id: 1 
+2023-03-07 20:29:08,407 INFO org.example.controllers.PersonController [http-nio-8080-exec-5] start to find id: 2 
+2023-03-07 20:29:08,407 INFO org.example.services.PersonService [http-nio-8080-exec-5] Find certain person
+2023-03-07 20:29:08,410 INFO org.example.controllers.PersonController [http-nio-8080-exec-5] person found id: 2 
+2023-03-07 20:29:09,379 WARN org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver [http-nio-8080-exec-6] Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; nested exception is java.lang.NumberFormatException: For input string: ""]
+2023-03-07 20:29:20,289 INFO org.example.controllers.PersonController [http-nio-8080-exec-8] start to find id: 2 
+2023-03-07 20:29:20,289 INFO org.example.services.PersonService [http-nio-8080-exec-8] Find certain person
+2023-03-07 20:29:20,292 INFO org.example.controllers.PersonController [http-nio-8080-exec-8] person found id: 2 
+2023-03-07 20:29:23,531 INFO org.example.controllers.PersonController [http-nio-8080-exec-9] start to find id: 3 
+2023-03-07 20:29:23,532 INFO org.example.services.PersonService [http-nio-8080-exec-9] Find certain person
+2023-03-07 20:29:23,535 INFO org.example.controllers.PersonController [http-nio-8080-exec-9] person found id: 3 
+2023-03-07 20:30:06,081 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler [SpringContextShutdownHook] Shutting down ExecutorService 'taskScheduler'
+2023-03-07 20:30:06,083 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
+2023-03-07 20:30:06,084 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [SpringContextShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-03-07 20:30:06,086 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-03-07 20:30:06,090 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown completed.
