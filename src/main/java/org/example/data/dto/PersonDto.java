@@ -28,4 +28,7 @@ public class PersonDto {
     @PositiveOrZero
     @Max(130)
     private int age;
+
+    //how to do it in another way without extra field?
+    private int league_id;
 }

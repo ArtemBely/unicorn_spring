@@ -37,6 +37,10 @@ public class PersonEntity {
     @Column(name="AGE", nullable = false)
     private int age;
 
+    //how to do it in another way without extra field?
+    @Column(name="league_id", nullable = false)
+    private int league_id;
+
     @ManyToOne(fetch = FetchType.LAZY, cascade={ CascadeType.PERSIST, CascadeType.MERGE })
     @JoinColumn(name = "league_id", referencedColumnName="ID", insertable = false, updatable = false)
     @Fetch(FetchMode.JOIN)
