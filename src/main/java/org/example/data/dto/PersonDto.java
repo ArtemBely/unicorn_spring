@@ -3,6 +3,7 @@ package org.example.data.dto;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.*;
+import org.example.data.entity.LeagueEntity;
 
 import javax.validation.Valid;
 import javax.validation.constraints.Max;
@@ -27,5 +28,4 @@ public class PersonDto {
     @PositiveOrZero
     @Max(130)
     private int age;
-
 }
