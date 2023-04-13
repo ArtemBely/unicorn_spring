@@ -3,7 +3,9 @@ package org.example.services;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.example.data.dto.PersonDto;
+import org.example.data.entity.LeagueEntity;
 import org.example.data.entity.PersonEntity;
+import org.example.data.enums.LeagueEnum;
 import org.example.data.mapper.PersonMapper;
 import org.example.repository.PersonRepository;
 import org.springframework.stereotype.Service;
@@ -29,6 +31,9 @@ public class PersonService {
         log.info("start process insert person in services");
         PersonEntity personEntity = personMapper.mapToEntity(dto);
         log.info("start process into db {}", personEntity);
+//        LeagueEntity league = new LeagueEntity();
+//        league.setId(leagueId);
+//        personEntity.setLeague_id(league);
         personRepository.save(personEntity);
         log.info("end process insert person in services");
     }

@@ -3,12 +3,11 @@ package org.example.data.entity;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.*;
-import org.example.data.enums.LeagueEnum;
-import javax.persistence.*;
-import java.util.List;
 
-@Table(name="league")
-@Entity(name="LeagueEntity")
+import javax.persistence.*;
+
+@Table(name="product")
+@Entity(name="ProductEntity")
 @Setter
 @Getter
 @ToString
@@ -18,19 +17,18 @@ import java.util.List;
 @JsonIgnoreProperties(ignoreUnknown = true)
 @JsonInclude(JsonInclude.Include.NON_NULL)
 
-public class LeagueEntity {
+public class ProductEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name="ID", nullable = false)
     private int id;
 
-    @Enumerated(EnumType.STRING)
-    @Column(name="LEAGUE", nullable = false)
-    private LeagueEnum league;
+    @Column(name="CONTENT", nullable = false)
+    private String content;
 
-    @OneToMany(mappedBy = "id")
-    private List<PersonEntity> personEntities;
+    @Column(name="STATE", nullable = false)
+    private String state;
 
-//    public LeagueEntity(int i, LeagueEnum copaDiConferacion) {
-//    }
+    @Column(name="COUNT", nullable = false)
+    private int count;
 }
