@@ -3,6 +3,7 @@ package org.example.data.dto;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.*;
+import org.example.data.enums.StateEnum;
 
 import javax.validation.Valid;
 import javax.validation.constraints.Max;
@@ -23,8 +24,7 @@ public class ProductDto {
     @Valid
     @Size(min=2, message="Product should contain more than 2 character")
     private String content;
-    @Size(max=10)
-    private String state;
+    private StateEnum state;
     @PositiveOrZero
     @Max(130)
     private int count;

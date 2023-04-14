@@ -3,6 +3,7 @@ package org.example.data.entity;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.*;
+import org.example.data.enums.StateEnum;
 
 import javax.persistence.*;
 
@@ -25,9 +26,9 @@ public class ProductEntity {
 
     @Column(name="CONTENT", nullable = false)
     private String content;
-
+    @Enumerated(EnumType.STRING)
     @Column(name="STATE", nullable = false)
-    private String state;
+    private StateEnum state;
 
     @Column(name="COUNT", nullable = false)
     private int count;

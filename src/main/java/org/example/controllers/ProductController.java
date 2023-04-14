@@ -3,15 +3,13 @@ package org.example.controllers;
 import io.swagger.v3.oas.annotations.Operation;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.example.data.dto.PersonDto;
 import org.example.data.dto.ProductDto;
 import org.example.services.ProductService;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
+import java.util.List;
+import java.util.Optional;
 
 @Slf4j
 @RestController
@@ -20,11 +18,57 @@ import javax.validation.Valid;
 
 public class ProductController {
     private final ProductService productService;
+
+    @GetMapping("/v1/all")
+    @ResponseBody
+    public List<ProductDto> findAllProducts() {
+        log.info("start to find products");
+        List<ProductDto> productList = productService.findAll();
+        log.info("products founded ...");
+        return productList;
+    }
+
+    @GetMapping("/v1/get")
+    @ResponseBody
+    public ProductDto findProduct(@RequestParam int id) {
+        try {
+            log.info("start to find id: {} ",  id);
+            ProductDto product = productService.findOne(id);
+            log.info("person found id: {} ",  id);
+            return product;
+        }
+        catch (Exception e) {
+            log.error(e.toString());
+            return null;
+        }
+    }
+
     @Operation(summary="about")
     @PostMapping("/v1/insert")
-    public void createPerson(@Valid @RequestBody ProductDto productDto) {
+    public void createProductn(@Valid @RequestBody ProductDto productDto) {
         log.info("start process insert product in controller: {}",  productDto);
         productService.insert(productDto);
         log.info("end process insert product in controller: {}",  productDto);
+    }
+
+    @PutMapping("/v1/change")
+    public void changeProduct(@Valid @RequestBody ProductDto productDto, @RequestParam int id) {
+        try {
+            log.info("Start of processing of finding product with id = {}", id);
+            ProductDto product = productService.findOne(id);
+            productService.changeOne(productDto, id);
+            log.info("Product with id = {}, is = {}", id, product);
+        }
+        catch (Exception e) {
+            log.error(e.toString());
+        }
+    }
+
+    @DeleteMapping("/v1/delete")
+    @ResponseBody
+    public String deleteProduct(@RequestParam int id) {
+        log.info("start process of deleting product id: {}", id);
+        productService.deleteOne(id);
+        return "Deleted successfully";
     }
 }
