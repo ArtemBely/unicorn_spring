@@ -4,8 +4,11 @@ import io.swagger.v3.oas.annotations.Operation;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.example.data.dto.ProductDto;
+import org.example.exceptions.ProductException;
 import org.example.services.ProductService;
+import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.server.ResponseStatusException;
 
 import javax.validation.Valid;
 import java.util.List;
@@ -33,7 +36,7 @@ public class ProductController {
         try {
             log.info("start to find id: {} ",  id);
             ProductDto product = productService.findOne(id);
-            log.info("person found id: {} ",  id);
+            log.info("product found id: {} ",  id);
             return product;
         }
         catch (Exception e) {
@@ -60,9 +63,9 @@ public class ProductController {
             log.info("products founded ...");
             return productList;
         }
-        catch (Exception ex) {
-            log.error(ex.getMessage());
-            return null;
+        catch (ProductException ex) {
+            throw new ResponseStatusException(
+                    HttpStatus.BAD_REQUEST, "Product Not Found", ex);
         }
     }
 
