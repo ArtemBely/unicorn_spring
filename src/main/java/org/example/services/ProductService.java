@@ -11,10 +11,8 @@ import org.example.exceptions.ProductException;
 import org.example.repository.ProductRepository;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Objects;
-import java.util.Optional;
+import java.util.*;
+import java.util.stream.Collectors;
 
 @Service
 @Slf4j
@@ -33,6 +31,34 @@ public class ProductService {
         }
         return productDtoList;
     }
+
+    public List<ProductDto> findState(String state) throws ProductException {
+        log.info("Find all products");
+        productDtoList = new ArrayList<>();
+        if(EnumUtils.isValidEnum(StateEnum.class, state)) {
+            List<ProductEntity> personEntityList = productRepository
+                    .findAll()
+                    .stream()
+                    .filter( item -> item.getState().toString().equals(state) )
+                    .collect(Collectors.toList());
+            for (ProductEntity productEntity : personEntityList) {
+                productDtoList.add(productMapper.mapToDto(productEntity));
+            }
+            return productDtoList;
+        }
+        else throw new ProductException("Not compatible type of filter");
+    }
+
+    public List<ProductDto> findOneByName(String content) {
+        log.info("Find certain person");
+        List<ProductDto> personDto = new ArrayList<>();
+        List<ProductEntity> productOptionalEntity = productRepository.findByAlternative(content);
+        for(ProductEntity entity : productOptionalEntity) {
+            personDto.add(productMapper.mapToDto(entity));
+        }
+        return personDto;
+    }
+
     public ProductDto findOne(int id) throws ProductException {
         log.info("Find certain person");
         if(id != 0) {

@@ -9,7 +9,6 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
 import java.util.List;
-import java.util.Optional;
 
 @Slf4j
 @RestController
@@ -39,6 +38,30 @@ public class ProductController {
         }
         catch (Exception e) {
             log.error(e.toString());
+            return null;
+        }
+    }
+
+    @GetMapping("/v1/get/byname")
+    @ResponseBody
+    public List<ProductDto> findPerson(@RequestParam String content) {
+        log.info("start to find product: {} ",  content);
+        List<ProductDto> product = productService.findOneByName(content);
+        log.info("end to find product: {}", content);
+        return product;
+    }
+
+    @GetMapping("/v1/getItems")
+    @ResponseBody
+    public List<ProductDto> findAllProducts(@RequestParam String state) {
+        try{
+            log.info("start to find products");
+            List<ProductDto> productList = productService.findState(state);
+            log.info("products founded ...");
+            return productList;
+        }
+        catch (Exception ex) {
+            log.error(ex.getMessage());
             return null;
         }
     }
