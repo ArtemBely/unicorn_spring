@@ -39,8 +39,8 @@ public class ProductController {
             log.info("product found id: {} ",  id);
             return product;
         }
-        catch (Exception e) {
-            log.error(e.toString());
+        catch (Exception ex) {
+            log.error(ex.toString());
             return null;
         }
     }
@@ -64,8 +64,9 @@ public class ProductController {
             return productList;
         }
         catch (ProductException ex) {
+            log.error(ex.getMessage());
             throw new ResponseStatusException(
-                    HttpStatus.BAD_REQUEST, "Product Not Found", ex);
+                    HttpStatus.BAD_REQUEST, "Not compatible type of filter", ex);
         }
     }
 

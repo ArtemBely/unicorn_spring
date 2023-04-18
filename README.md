@@ -5,6 +5,12 @@
 
 # install and configure postgresql.
 
+# configure application.yml by using postgresql:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/<your-name-of-db>
+    username: <username>
+    password: <password>
+
 # create table in SQL CMD Terminal with follow schema and data types:
 create table product(
  ID: SERIAL PRIMARY KEY,

@@ -9,6 +9,7 @@ import org.example.data.enums.StateEnum;
 import org.example.data.mapper.ProductMapper;
 import org.example.exceptions.ProductException;
 import org.example.repository.ProductRepository;
+import org.example.utilities.ListUtility;
 import org.springframework.stereotype.Service;
 
 import java.util.*;
@@ -20,43 +21,30 @@ import java.util.stream.Collectors;
 public class ProductService {
     private final ProductMapper productMapper;
     private final ProductRepository productRepository;
-    private List<ProductDto> productDtoList;
 
     public List<ProductDto> findAll() {
         log.info("Find all products");
-        productDtoList = new ArrayList<>();
         List<ProductEntity> personEntityList = productRepository.findAll();
-        for (ProductEntity productEntity : personEntityList) {
-            productDtoList.add(productMapper.mapToDto(productEntity));
-        }
-        return productDtoList;
+        return ListUtility.getDtoList(personEntityList, productMapper);
     }
 
     public List<ProductDto> findState(String state) throws ProductException {
         log.info("Find all products");
-        productDtoList = new ArrayList<>();
         if(EnumUtils.isValidEnum(StateEnum.class, state)) {
             List<ProductEntity> personEntityList = productRepository
                     .findAll()
                     .stream()
                     .filter( item -> item.getState().toString().equals(state) )
                     .collect(Collectors.toList());
-            for (ProductEntity productEntity : personEntityList) {
-                productDtoList.add(productMapper.mapToDto(productEntity));
-            }
-            return productDtoList;
+            return ListUtility.getDtoList(personEntityList, productMapper);
         }
         else throw new ProductException("Not compatible type of filter");
     }
 
     public List<ProductDto> findOneByName(String content) {
         log.info("Find certain person");
-        List<ProductDto> personDto = new ArrayList<>();
         List<ProductEntity> productOptionalEntity = productRepository.findByAlternative(content);
-        for(ProductEntity entity : productOptionalEntity) {
-            personDto.add(productMapper.mapToDto(entity));
-        }
-        return personDto;
+        return ListUtility.getDtoList(productOptionalEntity, productMapper);
     }
 
     public ProductDto findOne(int id) throws ProductException {

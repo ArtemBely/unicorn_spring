@@ -1,5 +1,7 @@
 server:
   port: 8080
+  error:
+    include-message: always
 
 spring:
   jpa:
@@ -14,5 +16,6 @@ spring:
     driver-class-name: org.postgresql.Driver
     url: jdbc:postgresql://localhost:5432/jasonbourn
     username: postgres
-    password': postgres
+    password: postgres
+
 
