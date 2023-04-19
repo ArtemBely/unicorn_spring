@@ -1,138 +1,312 @@
-2023-04-18 13:27:11,576 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.1.7.Final
-2023-04-18 13:27:11,594 INFO org.example.Main [main] Starting Main using Java 15.0.10 on nb0188 with PID 21236 (C:\Users\belysheva\IdeaProjects\unicorn\build\classes\java\main started by belysheva in C:\Users\belysheva\IdeaProjects\unicorn)
-2023-04-18 13:27:11,596 INFO org.example.Main [main] No active profile set, falling back to default profiles: default
-2023-04-18 13:27:12,281 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-04-18 13:27:12,345 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 43 ms. Found 1 JPA repository interfaces.
-2023-04-18 13:27:13,275 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
-2023-04-18 13:27:13,289 INFO org.apache.coyote.http11.Http11NioProtocol [main] Initializing ProtocolHandler ["http-nio-8080"]
-2023-04-18 13:27:13,290 INFO org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
-2023-04-18 13:27:13,291 INFO org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.45]
-2023-04-18 13:27:13,429 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
-2023-04-18 13:27:13,430 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1770 ms
-2023-04-18 13:27:13,629 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-04-18 13:27:13,715 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.4.30.Final
-2023-04-18 13:27:14,004 INFO org.hibernate.annotations.common.Version [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2023-04-18 13:27:14,219 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
-2023-04-18 13:27:14,591 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
-2023-04-18 13:27:14,622 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
-2023-04-18 13:27:15,518 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-04-18 13:27:15,530 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-04-18 13:27:16,195 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-04-18 13:27:16,313 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [main] Initializing ExecutorService 'applicationTaskExecutor'
-2023-04-18 13:27:17,555 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler [main] Initializing ExecutorService 'taskScheduler'
-2023-04-18 13:27:17,583 INFO org.apache.coyote.http11.Http11NioProtocol [main] Starting ProtocolHandler ["http-nio-8080"]
-2023-04-18 13:27:17,616 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
-2023-04-18 13:27:17,633 INFO org.example.Main [main] Started Main in 6.514 seconds (JVM running for 7.611)
-2023-04-18 13:27:34,899 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-04-18 13:27:34,899 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-2] Initializing Servlet 'dispatcherServlet'
-2023-04-18 13:27:34,902 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-2] Completed initialization in 2 ms
-2023-04-18 13:27:34,961 INFO org.example.controllers.ProductController [http-nio-8080-exec-2] start to find products
-2023-04-18 13:27:34,962 INFO org.example.services.ProductService [http-nio-8080-exec-2] Find all products
-2023-04-18 13:27:35,176 INFO org.example.controllers.ProductController [http-nio-8080-exec-2] products founded ...
-2023-04-18 13:27:40,589 INFO org.example.controllers.ProductController [http-nio-8080-exec-3] start to find products
-2023-04-18 13:27:40,590 INFO org.example.services.ProductService [http-nio-8080-exec-3] Find all products
-2023-04-18 13:27:40,595 INFO org.example.controllers.ProductController [http-nio-8080-exec-3] products founded ...
-2023-04-18 13:28:43,544 INFO org.example.controllers.ProductController [http-nio-8080-exec-6] start to find products
-2023-04-18 13:28:43,545 INFO org.example.services.ProductService [http-nio-8080-exec-6] Find all products
-2023-04-18 13:28:43,554 INFO org.example.controllers.ProductController [http-nio-8080-exec-6] products founded ...
-2023-04-18 13:30:08,779 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler [SpringContextShutdownHook] Shutting down ExecutorService 'taskScheduler'
-2023-04-18 13:30:08,780 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
-2023-04-18 13:30:08,783 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [SpringContextShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
-2023-04-18 13:30:08,788 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown initiated...
-2023-04-18 13:30:08,799 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown completed.
-2023-04-18 13:30:15,329 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.1.7.Final
-2023-04-18 13:30:15,340 INFO org.example.Main [main] Starting Main using Java 15.0.10 on nb0188 with PID 812 (C:\Users\belysheva\IdeaProjects\unicorn\build\classes\java\main started by belysheva in C:\Users\belysheva\IdeaProjects\unicorn)
-2023-04-18 13:30:15,341 INFO org.example.Main [main] No active profile set, falling back to default profiles: default
-2023-04-18 13:30:16,081 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-04-18 13:30:16,136 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 44 ms. Found 1 JPA repository interfaces.
-2023-04-18 13:30:17,089 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
-2023-04-18 13:30:17,101 INFO org.apache.coyote.http11.Http11NioProtocol [main] Initializing ProtocolHandler ["http-nio-8080"]
-2023-04-18 13:30:17,101 INFO org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
-2023-04-18 13:30:17,103 INFO org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.45]
-2023-04-18 13:30:17,233 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
-2023-04-18 13:30:17,234 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1839 ms
-2023-04-18 13:30:17,431 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-04-18 13:30:17,501 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.4.30.Final
-2023-04-18 13:30:17,714 INFO org.hibernate.annotations.common.Version [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2023-04-18 13:30:17,853 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
-2023-04-18 13:30:18,115 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
-2023-04-18 13:30:18,143 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
-2023-04-18 13:30:19,060 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-04-18 13:30:19,075 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-04-18 13:30:19,722 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-04-18 13:30:19,832 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [main] Initializing ExecutorService 'applicationTaskExecutor'
-2023-04-18 13:30:21,098 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler [main] Initializing ExecutorService 'taskScheduler'
-2023-04-18 13:30:21,130 INFO org.apache.coyote.http11.Http11NioProtocol [main] Starting ProtocolHandler ["http-nio-8080"]
-2023-04-18 13:30:21,163 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
-2023-04-18 13:30:21,179 INFO org.example.Main [main] Started Main in 6.302 seconds (JVM running for 7.531)
-2023-04-18 13:30:28,586 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-3] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-04-18 13:30:28,587 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-3] Initializing Servlet 'dispatcherServlet'
-2023-04-18 13:30:28,589 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-3] Completed initialization in 1 ms
-2023-04-18 13:30:28,639 INFO org.example.controllers.ProductController [http-nio-8080-exec-3] start to find products
-2023-04-18 13:30:28,639 INFO org.example.services.ProductService [http-nio-8080-exec-3] Find all products
-2023-04-18 13:30:28,814 INFO org.example.controllers.ProductController [http-nio-8080-exec-3] products founded ...
-2023-04-18 13:30:34,714 INFO org.example.controllers.ProductController [http-nio-8080-exec-2] start to find products
-2023-04-18 13:30:34,714 INFO org.example.services.ProductService [http-nio-8080-exec-2] Find all products
-2023-04-18 13:30:34,719 INFO org.example.controllers.ProductController [http-nio-8080-exec-2] products founded ...
-2023-04-18 13:30:40,438 INFO org.example.controllers.ProductController [http-nio-8080-exec-5] start to find products
-2023-04-18 13:30:40,440 INFO org.example.services.ProductService [http-nio-8080-exec-5] Find all products
-2023-04-18 13:30:40,444 ERROR org.example.controllers.ProductController [http-nio-8080-exec-5] Not compatible type of filter
-2023-04-18 13:32:09,380 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler [SpringContextShutdownHook] Shutting down ExecutorService 'taskScheduler'
-2023-04-18 13:32:09,382 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
-2023-04-18 13:32:09,383 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [SpringContextShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
-2023-04-18 13:32:09,386 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown initiated...
-2023-04-18 13:32:09,396 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown completed.
-2023-04-18 13:32:15,926 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.1.7.Final
-2023-04-18 13:32:15,940 INFO org.example.Main [main] Starting Main using Java 15.0.10 on nb0188 with PID 19868 (C:\Users\belysheva\IdeaProjects\unicorn\build\classes\java\main started by belysheva in C:\Users\belysheva\IdeaProjects\unicorn)
-2023-04-18 13:32:15,940 INFO org.example.Main [main] No active profile set, falling back to default profiles: default
-2023-04-18 13:32:16,631 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-04-18 13:32:16,690 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 48 ms. Found 1 JPA repository interfaces.
-2023-04-18 13:32:17,554 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
-2023-04-18 13:32:17,566 INFO org.apache.coyote.http11.Http11NioProtocol [main] Initializing ProtocolHandler ["http-nio-8080"]
-2023-04-18 13:32:17,567 INFO org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
-2023-04-18 13:32:17,568 INFO org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.45]
-2023-04-18 13:32:17,691 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
-2023-04-18 13:32:17,692 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1701 ms
-2023-04-18 13:32:17,895 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-04-18 13:32:17,971 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.4.30.Final
-2023-04-18 13:32:18,179 INFO org.hibernate.annotations.common.Version [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2023-04-18 13:32:18,329 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
-2023-04-18 13:32:18,616 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
-2023-04-18 13:32:18,637 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
-2023-04-18 13:32:19,477 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-04-18 13:32:19,493 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-04-18 13:32:20,154 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-04-18 13:32:20,267 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [main] Initializing ExecutorService 'applicationTaskExecutor'
-2023-04-18 13:32:21,543 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler [main] Initializing ExecutorService 'taskScheduler'
-2023-04-18 13:32:21,577 INFO org.apache.coyote.http11.Http11NioProtocol [main] Starting ProtocolHandler ["http-nio-8080"]
-2023-04-18 13:32:21,613 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
-2023-04-18 13:32:21,632 INFO org.example.Main [main] Started Main in 6.197 seconds (JVM running for 7.445)
-2023-04-18 13:32:39,117 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-3] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-04-18 13:32:39,118 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-3] Initializing Servlet 'dispatcherServlet'
-2023-04-18 13:32:39,120 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-3] Completed initialization in 1 ms
-2023-04-18 13:32:39,181 INFO org.example.controllers.ProductController [http-nio-8080-exec-3] start to find product: Chicken 
-2023-04-18 13:32:39,182 INFO org.example.services.ProductService [http-nio-8080-exec-3] Find certain person
-2023-04-18 13:32:39,311 INFO org.example.controllers.ProductController [http-nio-8080-exec-3] end to find product: Chicken
-2023-04-18 13:32:44,320 INFO org.example.controllers.ProductController [http-nio-8080-exec-2] start to find product: ChickenD 
-2023-04-18 13:32:44,322 INFO org.example.services.ProductService [http-nio-8080-exec-2] Find certain person
-2023-04-18 13:32:44,327 INFO org.example.controllers.ProductController [http-nio-8080-exec-2] end to find product: ChickenD
-2023-04-18 13:35:47,002 INFO org.example.controllers.ProductController [http-nio-8080-exec-6] start to find product: Chicken 
-2023-04-18 13:35:47,003 INFO org.example.services.ProductService [http-nio-8080-exec-6] Find certain person
-2023-04-18 13:35:47,006 INFO org.example.controllers.ProductController [http-nio-8080-exec-6] end to find product: Chicken
-2023-04-18 13:35:52,192 INFO org.example.controllers.ProductController [http-nio-8080-exec-7] start to find products
-2023-04-18 13:35:52,197 INFO org.example.services.ProductService [http-nio-8080-exec-7] Find all products
-2023-04-18 13:35:52,308 INFO org.example.controllers.ProductController [http-nio-8080-exec-7] products founded ...
-2023-04-18 13:35:55,499 INFO org.example.controllers.ProductController [http-nio-8080-exec-8] start to find products
-2023-04-18 13:35:55,500 INFO org.example.services.ProductService [http-nio-8080-exec-8] Find all products
-2023-04-18 13:35:55,505 INFO org.example.controllers.ProductController [http-nio-8080-exec-8] products founded ...
-2023-04-18 13:35:58,297 INFO org.example.controllers.ProductController [http-nio-8080-exec-9] start to find id: 281 
-2023-04-18 13:35:58,298 INFO org.example.services.ProductService [http-nio-8080-exec-9] Find certain person
-2023-04-18 13:35:58,314 ERROR org.example.controllers.ProductController [http-nio-8080-exec-9] java.util.NoSuchElementException: No value present
-2023-04-18 13:36:07,313 INFO org.example.controllers.ProductController [http-nio-8080-exec-10] start to find id: 26 
-2023-04-18 13:36:07,319 INFO org.example.services.ProductService [http-nio-8080-exec-10] Find certain person
-2023-04-18 13:36:07,323 ERROR org.example.controllers.ProductController [http-nio-8080-exec-10] java.util.NoSuchElementException: No value present
-2023-04-18 13:36:33,086 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler [SpringContextShutdownHook] Shutting down ExecutorService 'taskScheduler'
-2023-04-18 13:36:33,088 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
-2023-04-18 13:36:33,089 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [SpringContextShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
-2023-04-18 13:36:33,091 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown initiated...
-2023-04-18 13:36:33,095 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown completed.
+2023-04-19 14:25:45,810 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.1.7.Final
+2023-04-19 14:25:45,846 INFO org.example.Main [main] Starting Main using Java 15.0.10 on nb0188 with PID 15748 (C:\Users\belysheva\IdeaProjects\unicorn\build\classes\java\main started by belysheva in C:\Users\belysheva\IdeaProjects\unicorn)
+2023-04-19 14:25:45,853 INFO org.example.Main [main] No active profile set, falling back to default profiles: default
+2023-04-19 14:25:46,656 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-19 14:25:46,728 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 59 ms. Found 1 JPA repository interfaces.
+2023-04-19 14:25:47,884 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2023-04-19 14:25:47,899 INFO org.apache.coyote.http11.Http11NioProtocol [main] Initializing ProtocolHandler ["http-nio-8080"]
+2023-04-19 14:25:47,900 INFO org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2023-04-19 14:25:47,901 INFO org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.45]
+2023-04-19 14:25:48,047 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+2023-04-19 14:25:48,048 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2134 ms
+2023-04-19 14:25:48,466 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-19 14:25:48,598 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.4.30.Final
+2023-04-19 14:25:49,216 INFO org.hibernate.annotations.common.Version [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-04-19 14:25:49,521 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2023-04-19 14:25:50,158 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-04-19 14:25:50,208 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+2023-04-19 14:25:51,520 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-19 14:25:51,548 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-19 14:25:52,797 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-19 14:25:52,972 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [main] Initializing ExecutorService 'applicationTaskExecutor'
+2023-04-19 14:25:55,184 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler [main] Initializing ExecutorService 'taskScheduler'
+2023-04-19 14:25:55,224 INFO org.apache.coyote.http11.Http11NioProtocol [main] Starting ProtocolHandler ["http-nio-8080"]
+2023-04-19 14:25:55,271 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2023-04-19 14:25:55,299 INFO org.example.Main [main] Started Main in 10.042 seconds (JVM running for 11.429)
+2023-04-19 14:26:45,211 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-19 14:26:45,212 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2023-04-19 14:26:45,217 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] Completed initialization in 4 ms
+2023-04-19 14:26:45,270 INFO org.example.controllers.ProductController [http-nio-8080-exec-1] start to find products
+2023-04-19 14:26:45,270 INFO org.example.services.ProductService [http-nio-8080-exec-1] Find all products
+2023-04-19 14:26:45,516 INFO org.example.controllers.ProductController [http-nio-8080-exec-1] products founded ...
+2023-04-19 14:26:48,970 INFO org.example.controllers.ProductController [http-nio-8080-exec-3] start to find products
+2023-04-19 14:26:48,971 INFO org.example.services.ProductService [http-nio-8080-exec-3] Find all products
+2023-04-19 14:26:48,976 INFO org.example.controllers.ProductController [http-nio-8080-exec-3] products founded ...
+2023-04-19 14:26:52,891 INFO org.example.controllers.ProductController [http-nio-8080-exec-4] start to find products
+2023-04-19 14:26:52,891 INFO org.example.services.ProductService [http-nio-8080-exec-4] Find all products
+2023-04-19 14:26:52,897 INFO org.example.controllers.ProductController [http-nio-8080-exec-4] products founded ...
+2023-04-19 14:26:56,092 INFO org.example.controllers.ProductController [http-nio-8080-exec-5] start to find product: Chicken 
+2023-04-19 14:26:56,093 INFO org.example.services.ProductService [http-nio-8080-exec-5] Find certain person
+2023-04-19 14:26:56,122 INFO org.example.controllers.ProductController [http-nio-8080-exec-5] end to find product: Chicken
+2023-04-19 14:27:01,927 INFO org.example.controllers.ProductController [http-nio-8080-exec-6] start to find id: 26 
+2023-04-19 14:27:01,928 INFO org.example.services.ProductService [http-nio-8080-exec-6] Find certain person
+2023-04-19 14:27:01,943 ERROR org.example.controllers.ProductController [http-nio-8080-exec-6] java.util.NoSuchElementException: No value present
+2023-04-19 14:28:13,647 INFO org.example.controllers.ProductController [http-nio-8080-exec-8] start to find id: 26 
+2023-04-19 14:28:13,647 INFO org.example.services.ProductService [http-nio-8080-exec-8] Find certain person
+2023-04-19 14:28:13,649 ERROR org.example.controllers.ProductController [http-nio-8080-exec-8] java.util.NoSuchElementException: No value present
+2023-04-19 14:28:19,425 INFO org.example.controllers.ProductController [http-nio-8080-exec-10] start to find id: 28 
+2023-04-19 14:28:19,426 INFO org.example.services.ProductService [http-nio-8080-exec-10] Find certain person
+2023-04-19 14:28:19,434 INFO org.example.controllers.ProductController [http-nio-8080-exec-10] product found id: 28 
+2023-04-19 14:28:25,650 INFO org.example.controllers.ProductController [http-nio-8080-exec-2] start to find id: 9 
+2023-04-19 14:28:25,651 INFO org.example.services.ProductService [http-nio-8080-exec-2] Find certain person
+2023-04-19 14:28:25,658 INFO org.example.controllers.ProductController [http-nio-8080-exec-2] product found id: 9 
+2023-04-19 14:34:22,760 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler [SpringContextShutdownHook] Shutting down ExecutorService 'taskScheduler'
+2023-04-19 14:34:22,762 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
+2023-04-19 14:34:22,763 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [SpringContextShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-19 14:34:22,765 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-04-19 14:34:22,774 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown completed.
+2023-04-19 16:30:08,676 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.1.7.Final
+2023-04-19 16:30:08,700 INFO org.example.Main [main] Starting Main using Java 15.0.10 on nb0188 with PID 18996 (C:\Users\belysheva\IdeaProjects\unicorn\build\classes\java\main started by belysheva in C:\Users\belysheva\IdeaProjects\unicorn)
+2023-04-19 16:30:08,701 INFO org.example.Main [main] No active profile set, falling back to default profiles: default
+2023-04-19 16:30:09,464 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-19 16:30:09,529 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 52 ms. Found 1 JPA repository interfaces.
+2023-04-19 16:30:10,462 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2023-04-19 16:30:10,478 INFO org.apache.coyote.http11.Http11NioProtocol [main] Initializing ProtocolHandler ["http-nio-8080"]
+2023-04-19 16:30:10,479 INFO org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2023-04-19 16:30:10,479 INFO org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.45]
+2023-04-19 16:30:10,630 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+2023-04-19 16:30:10,631 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1869 ms
+2023-04-19 16:30:10,868 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-19 16:30:10,960 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.4.30.Final
+2023-04-19 16:30:11,242 INFO org.hibernate.annotations.common.Version [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-04-19 16:30:11,401 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2023-04-19 16:30:11,687 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-04-19 16:30:11,713 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+2023-04-19 16:30:12,678 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-19 16:30:12,693 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-19 16:30:13,351 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-19 16:30:13,464 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [main] Initializing ExecutorService 'applicationTaskExecutor'
+2023-04-19 16:30:14,893 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler [main] Initializing ExecutorService 'taskScheduler'
+2023-04-19 16:30:14,924 INFO org.apache.coyote.http11.Http11NioProtocol [main] Starting ProtocolHandler ["http-nio-8080"]
+2023-04-19 16:30:14,967 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2023-04-19 16:30:14,985 INFO org.example.Main [main] Started Main in 6.797 seconds (JVM running for 8.079)
+2023-04-19 16:30:21,217 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-19 16:30:21,218 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2023-04-19 16:30:21,219 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] Completed initialization in 1 ms
+2023-04-19 16:30:21,252 INFO org.example.controllers.ProductController [http-nio-8080-exec-1] start to find products
+2023-04-19 16:30:21,253 INFO org.example.services.ProductService [http-nio-8080-exec-1] Find all products
+2023-04-19 16:30:21,379 INFO org.example.controllers.ProductController [http-nio-8080-exec-1] products founded ...
+2023-04-19 16:30:25,035 INFO org.example.controllers.ProductController [http-nio-8080-exec-3] start to find id: 9 
+2023-04-19 16:30:25,036 INFO org.example.services.ProductService [http-nio-8080-exec-3] Find certain person
+2023-04-19 16:30:25,051 INFO org.example.controllers.ProductController [http-nio-8080-exec-3] product found id: 9 
+2023-04-19 16:30:28,977 INFO org.example.controllers.ProductController [http-nio-8080-exec-4] start to find product: Chicken 
+2023-04-19 16:30:28,977 INFO org.example.services.ProductService [http-nio-8080-exec-4] Find certain person
+2023-04-19 16:30:29,000 INFO org.example.controllers.ProductController [http-nio-8080-exec-4] end to find product: Chicken
+2023-04-19 16:31:22,287 INFO org.example.controllers.ProductController [http-nio-8080-exec-7] start to find products
+2023-04-19 16:31:22,287 INFO org.example.services.ProductService [http-nio-8080-exec-7] Find all products
+2023-04-19 16:31:22,291 INFO org.example.controllers.ProductController [http-nio-8080-exec-7] products founded ...
+2023-04-19 16:31:22,297 INFO org.example.controllers.ProductController [http-nio-8080-exec-8] start to find products
+2023-04-19 16:31:22,298 INFO org.example.services.ProductService [http-nio-8080-exec-8] Find all products
+2023-04-19 16:31:22,303 INFO org.example.controllers.ProductController [http-nio-8080-exec-8] products founded ...
+2023-04-19 16:31:22,639 INFO org.example.controllers.ProductController [http-nio-8080-exec-9] start to find products
+2023-04-19 16:31:22,640 INFO org.example.services.ProductService [http-nio-8080-exec-9] Find all products
+2023-04-19 16:31:22,645 INFO org.example.controllers.ProductController [http-nio-8080-exec-9] products founded ...
+2023-04-19 16:31:22,651 INFO org.example.controllers.ProductController [http-nio-8080-exec-10] start to find products
+2023-04-19 16:31:22,652 INFO org.example.services.ProductService [http-nio-8080-exec-10] Find all products
+2023-04-19 16:31:22,656 INFO org.example.controllers.ProductController [http-nio-8080-exec-10] products founded ...
+2023-04-19 16:31:22,663 INFO org.example.controllers.ProductController [http-nio-8080-exec-2] start to find products
+2023-04-19 16:31:22,664 INFO org.example.services.ProductService [http-nio-8080-exec-2] Find all products
+2023-04-19 16:31:22,667 INFO org.example.controllers.ProductController [http-nio-8080-exec-2] products founded ...
+2023-04-19 16:31:22,672 INFO org.example.controllers.ProductController [http-nio-8080-exec-1] start to find products
+2023-04-19 16:31:22,672 INFO org.example.services.ProductService [http-nio-8080-exec-1] Find all products
+2023-04-19 16:31:22,675 INFO org.example.controllers.ProductController [http-nio-8080-exec-1] products founded ...
+2023-04-19 16:31:22,683 INFO org.example.controllers.ProductController [http-nio-8080-exec-3] start to find products
+2023-04-19 16:31:22,684 INFO org.example.services.ProductService [http-nio-8080-exec-3] Find all products
+2023-04-19 16:31:22,688 INFO org.example.controllers.ProductController [http-nio-8080-exec-3] products founded ...
+2023-04-19 16:31:22,694 INFO org.example.controllers.ProductController [http-nio-8080-exec-4] start to find products
+2023-04-19 16:31:22,694 INFO org.example.services.ProductService [http-nio-8080-exec-4] Find all products
+2023-04-19 16:31:22,700 INFO org.example.controllers.ProductController [http-nio-8080-exec-4] products founded ...
+2023-04-19 16:31:22,706 INFO org.example.controllers.ProductController [http-nio-8080-exec-6] start to find products
+2023-04-19 16:31:22,706 INFO org.example.services.ProductService [http-nio-8080-exec-6] Find all products
+2023-04-19 16:31:22,710 INFO org.example.controllers.ProductController [http-nio-8080-exec-6] products founded ...
+2023-04-19 16:31:22,717 INFO org.example.controllers.ProductController [http-nio-8080-exec-5] start to find products
+2023-04-19 16:31:22,717 INFO org.example.services.ProductService [http-nio-8080-exec-5] Find all products
+2023-04-19 16:31:22,720 INFO org.example.controllers.ProductController [http-nio-8080-exec-5] products founded ...
+2023-04-19 16:31:22,725 INFO org.example.controllers.ProductController [http-nio-8080-exec-7] start to find products
+2023-04-19 16:31:22,725 INFO org.example.services.ProductService [http-nio-8080-exec-7] Find all products
+2023-04-19 16:31:22,729 INFO org.example.controllers.ProductController [http-nio-8080-exec-7] products founded ...
+2023-04-19 16:31:22,736 INFO org.example.controllers.ProductController [http-nio-8080-exec-8] start to find products
+2023-04-19 16:31:22,737 INFO org.example.services.ProductService [http-nio-8080-exec-8] Find all products
+2023-04-19 16:31:22,740 INFO org.example.controllers.ProductController [http-nio-8080-exec-8] products founded ...
+2023-04-19 16:31:22,745 INFO org.example.controllers.ProductController [http-nio-8080-exec-9] start to find products
+2023-04-19 16:31:22,746 INFO org.example.services.ProductService [http-nio-8080-exec-9] Find all products
+2023-04-19 16:31:22,750 INFO org.example.controllers.ProductController [http-nio-8080-exec-9] products founded ...
+2023-04-19 16:31:22,755 INFO org.example.controllers.ProductController [http-nio-8080-exec-10] start to find products
+2023-04-19 16:31:22,755 INFO org.example.services.ProductService [http-nio-8080-exec-10] Find all products
+2023-04-19 16:31:22,759 INFO org.example.controllers.ProductController [http-nio-8080-exec-10] products founded ...
+2023-04-19 16:31:22,766 INFO org.example.controllers.ProductController [http-nio-8080-exec-2] start to find products
+2023-04-19 16:31:22,766 INFO org.example.services.ProductService [http-nio-8080-exec-2] Find all products
+2023-04-19 16:31:22,769 INFO org.example.controllers.ProductController [http-nio-8080-exec-2] products founded ...
+2023-04-19 16:31:22,773 INFO org.example.controllers.ProductController [http-nio-8080-exec-1] start to find products
+2023-04-19 16:31:22,774 INFO org.example.services.ProductService [http-nio-8080-exec-1] Find all products
+2023-04-19 16:31:22,777 INFO org.example.controllers.ProductController [http-nio-8080-exec-1] products founded ...
+2023-04-19 16:31:22,784 INFO org.example.controllers.ProductController [http-nio-8080-exec-3] start to find products
+2023-04-19 16:31:22,785 INFO org.example.services.ProductService [http-nio-8080-exec-3] Find all products
+2023-04-19 16:31:22,787 INFO org.example.controllers.ProductController [http-nio-8080-exec-3] products founded ...
+2023-04-19 16:31:45,647 INFO org.example.controllers.ProductController [http-nio-8080-exec-5] start to find product: Cheese 
+2023-04-19 16:31:45,648 INFO org.example.services.ProductService [http-nio-8080-exec-5] Find certain person
+2023-04-19 16:31:45,650 INFO org.example.controllers.ProductController [http-nio-8080-exec-5] end to find product: Cheese
+2023-04-19 16:31:51,529 INFO org.example.controllers.ProductController [http-nio-8080-exec-7] start to find products
+2023-04-19 16:31:51,530 INFO org.example.services.ProductService [http-nio-8080-exec-7] Find all products
+2023-04-19 16:31:51,533 INFO org.example.controllers.ProductController [http-nio-8080-exec-7] products founded ...
+2023-04-19 16:31:51,847 INFO org.example.controllers.ProductController [http-nio-8080-exec-8] start to find products
+2023-04-19 16:31:51,848 INFO org.example.services.ProductService [http-nio-8080-exec-8] Find all products
+2023-04-19 16:31:51,851 INFO org.example.controllers.ProductController [http-nio-8080-exec-8] products founded ...
+2023-04-19 16:31:51,857 INFO org.example.controllers.ProductController [http-nio-8080-exec-9] start to find products
+2023-04-19 16:31:51,857 INFO org.example.services.ProductService [http-nio-8080-exec-9] Find all products
+2023-04-19 16:31:51,860 INFO org.example.controllers.ProductController [http-nio-8080-exec-9] products founded ...
+2023-04-19 16:31:51,865 INFO org.example.controllers.ProductController [http-nio-8080-exec-10] start to find products
+2023-04-19 16:31:51,865 INFO org.example.services.ProductService [http-nio-8080-exec-10] Find all products
+2023-04-19 16:31:51,868 INFO org.example.controllers.ProductController [http-nio-8080-exec-10] products founded ...
+2023-04-19 16:31:51,872 INFO org.example.controllers.ProductController [http-nio-8080-exec-2] start to find products
+2023-04-19 16:31:51,873 INFO org.example.services.ProductService [http-nio-8080-exec-2] Find all products
+2023-04-19 16:31:51,876 INFO org.example.controllers.ProductController [http-nio-8080-exec-2] products founded ...
+2023-04-19 16:31:51,880 INFO org.example.controllers.ProductController [http-nio-8080-exec-1] start to find products
+2023-04-19 16:31:51,881 INFO org.example.services.ProductService [http-nio-8080-exec-1] Find all products
+2023-04-19 16:31:51,883 INFO org.example.controllers.ProductController [http-nio-8080-exec-1] products founded ...
+2023-04-19 16:31:51,887 INFO org.example.controllers.ProductController [http-nio-8080-exec-3] start to find products
+2023-04-19 16:31:51,888 INFO org.example.services.ProductService [http-nio-8080-exec-3] Find all products
+2023-04-19 16:31:51,890 INFO org.example.controllers.ProductController [http-nio-8080-exec-3] products founded ...
+2023-04-19 16:31:51,896 INFO org.example.controllers.ProductController [http-nio-8080-exec-4] start to find products
+2023-04-19 16:31:51,896 INFO org.example.services.ProductService [http-nio-8080-exec-4] Find all products
+2023-04-19 16:31:51,898 INFO org.example.controllers.ProductController [http-nio-8080-exec-4] products founded ...
+2023-04-19 16:31:51,903 INFO org.example.controllers.ProductController [http-nio-8080-exec-6] start to find products
+2023-04-19 16:31:51,903 INFO org.example.services.ProductService [http-nio-8080-exec-6] Find all products
+2023-04-19 16:31:51,906 INFO org.example.controllers.ProductController [http-nio-8080-exec-6] products founded ...
+2023-04-19 16:31:51,910 INFO org.example.controllers.ProductController [http-nio-8080-exec-5] start to find products
+2023-04-19 16:31:51,910 INFO org.example.services.ProductService [http-nio-8080-exec-5] Find all products
+2023-04-19 16:31:51,912 INFO org.example.controllers.ProductController [http-nio-8080-exec-5] products founded ...
+2023-04-19 16:31:51,917 INFO org.example.controllers.ProductController [http-nio-8080-exec-7] start to find products
+2023-04-19 16:31:51,917 INFO org.example.services.ProductService [http-nio-8080-exec-7] Find all products
+2023-04-19 16:31:51,919 INFO org.example.controllers.ProductController [http-nio-8080-exec-7] products founded ...
+2023-04-19 16:31:59,382 INFO org.example.controllers.ProductController [http-nio-8080-exec-9] start to find product: Fruit 
+2023-04-19 16:31:59,383 INFO org.example.services.ProductService [http-nio-8080-exec-9] Find certain person
+2023-04-19 16:31:59,385 INFO org.example.controllers.ProductController [http-nio-8080-exec-9] end to find product: Fruit
+2023-04-19 16:31:59,696 INFO org.example.controllers.ProductController [http-nio-8080-exec-10] start to find products
+2023-04-19 16:31:59,697 INFO org.example.services.ProductService [http-nio-8080-exec-10] Find all products
+2023-04-19 16:31:59,700 INFO org.example.controllers.ProductController [http-nio-8080-exec-10] products founded ...
+2023-04-19 16:32:03,420 INFO org.example.controllers.ProductController [http-nio-8080-exec-1] start to find id: 10 
+2023-04-19 16:32:03,420 INFO org.example.services.ProductService [http-nio-8080-exec-1] Find certain person
+2023-04-19 16:32:03,423 INFO org.example.controllers.ProductController [http-nio-8080-exec-1] product found id: 10 
+2023-04-19 16:32:03,876 INFO org.example.controllers.ProductController [http-nio-8080-exec-4] Start of processing of finding product with id = 10
+2023-04-19 16:32:03,876 INFO org.example.services.ProductService [http-nio-8080-exec-4] Find certain person
+2023-04-19 16:32:03,879 INFO org.example.services.ProductService [http-nio-8080-exec-4] start process of changing product in services
+2023-04-19 16:32:03,883 INFO org.example.services.ProductService [http-nio-8080-exec-4] start process into db ProductEntity(id=10, content=Fruit, state=COMPLETED, count=9)
+2023-04-19 16:32:03,927 INFO org.example.services.ProductService [http-nio-8080-exec-4] end process of changing product in services
+2023-04-19 16:32:03,927 INFO org.example.controllers.ProductController [http-nio-8080-exec-4] Product with id = 10, is = ProductDto(id=10, content=Fruit, state=ACTIVE, count=9)
+2023-04-19 16:32:04,604 INFO org.example.controllers.ProductController [http-nio-8080-exec-6] start to find products
+2023-04-19 16:32:04,604 INFO org.example.services.ProductService [http-nio-8080-exec-6] Find all products
+2023-04-19 16:32:04,608 INFO org.example.controllers.ProductController [http-nio-8080-exec-6] products founded ...
+2023-04-19 16:32:04,616 INFO org.example.controllers.ProductController [http-nio-8080-exec-5] start to find products
+2023-04-19 16:32:04,616 INFO org.example.services.ProductService [http-nio-8080-exec-5] Find all products
+2023-04-19 16:32:04,619 INFO org.example.controllers.ProductController [http-nio-8080-exec-5] products founded ...
+2023-04-19 16:32:04,942 INFO org.example.controllers.ProductController [http-nio-8080-exec-7] start to find products
+2023-04-19 16:32:04,943 INFO org.example.services.ProductService [http-nio-8080-exec-7] Find all products
+2023-04-19 16:32:04,945 INFO org.example.controllers.ProductController [http-nio-8080-exec-7] products founded ...
+2023-04-19 16:32:04,962 INFO org.example.controllers.ProductController [http-nio-8080-exec-8] start to find products
+2023-04-19 16:32:04,962 INFO org.example.services.ProductService [http-nio-8080-exec-8] Find all products
+2023-04-19 16:32:04,964 INFO org.example.controllers.ProductController [http-nio-8080-exec-8] products founded ...
+2023-04-19 16:32:04,977 INFO org.example.controllers.ProductController [http-nio-8080-exec-9] start to find products
+2023-04-19 16:32:04,979 INFO org.example.services.ProductService [http-nio-8080-exec-9] Find all products
+2023-04-19 16:32:04,983 INFO org.example.controllers.ProductController [http-nio-8080-exec-9] products founded ...
+2023-04-19 16:32:04,994 INFO org.example.controllers.ProductController [http-nio-8080-exec-10] start to find products
+2023-04-19 16:32:04,995 INFO org.example.services.ProductService [http-nio-8080-exec-10] Find all products
+2023-04-19 16:32:04,997 INFO org.example.controllers.ProductController [http-nio-8080-exec-10] products founded ...
+2023-04-19 16:32:05,002 INFO org.example.controllers.ProductController [http-nio-8080-exec-2] start to find products
+2023-04-19 16:32:05,002 INFO org.example.services.ProductService [http-nio-8080-exec-2] Find all products
+2023-04-19 16:32:05,004 INFO org.example.controllers.ProductController [http-nio-8080-exec-2] products founded ...
+2023-04-19 16:32:05,014 INFO org.example.controllers.ProductController [http-nio-8080-exec-1] start to find products
+2023-04-19 16:32:05,014 INFO org.example.services.ProductService [http-nio-8080-exec-1] Find all products
+2023-04-19 16:32:05,015 INFO org.example.controllers.ProductController [http-nio-8080-exec-3] start to find products
+2023-04-19 16:32:05,016 INFO org.example.services.ProductService [http-nio-8080-exec-3] Find all products
+2023-04-19 16:32:05,016 INFO org.example.controllers.ProductController [http-nio-8080-exec-1] products founded ...
+2023-04-19 16:32:05,019 INFO org.example.controllers.ProductController [http-nio-8080-exec-1] start to find products
+2023-04-19 16:32:05,019 INFO org.example.services.ProductService [http-nio-8080-exec-1] Find all products
+2023-04-19 16:32:05,021 INFO org.example.controllers.ProductController [http-nio-8080-exec-1] products founded ...
+2023-04-19 16:32:05,021 INFO org.example.controllers.ProductController [http-nio-8080-exec-4] start to find products
+2023-04-19 16:32:05,022 INFO org.example.services.ProductService [http-nio-8080-exec-4] Find all products
+2023-04-19 16:32:05,023 INFO org.example.controllers.ProductController [http-nio-8080-exec-3] products founded ...
+2023-04-19 16:32:05,027 INFO org.example.controllers.ProductController [http-nio-8080-exec-6] start to find products
+2023-04-19 16:32:05,027 INFO org.example.services.ProductService [http-nio-8080-exec-6] Find all products
+2023-04-19 16:32:05,031 INFO org.example.controllers.ProductController [http-nio-8080-exec-4] products founded ...
+2023-04-19 16:32:05,031 INFO org.example.controllers.ProductController [http-nio-8080-exec-6] products founded ...
+2023-04-19 16:32:05,046 INFO org.example.controllers.ProductController [http-nio-8080-exec-10] start to find products
+2023-04-19 16:32:05,039 INFO org.example.controllers.ProductController [http-nio-8080-exec-9] start to find products
+2023-04-19 16:32:05,049 INFO org.example.services.ProductService [http-nio-8080-exec-9] Find all products
+2023-04-19 16:32:05,049 INFO org.example.services.ProductService [http-nio-8080-exec-10] Find all products
+2023-04-19 16:32:05,038 INFO org.example.controllers.ProductController [http-nio-8080-exec-7] start to find products
+2023-04-19 16:32:05,050 INFO org.example.services.ProductService [http-nio-8080-exec-7] Find all products
+2023-04-19 16:32:05,052 INFO org.example.controllers.ProductController [http-nio-8080-exec-9] products founded ...
+2023-04-19 16:32:05,052 INFO org.example.controllers.ProductController [http-nio-8080-exec-7] products founded ...
+2023-04-19 16:32:05,054 INFO org.example.controllers.ProductController [http-nio-8080-exec-10] products founded ...
+2023-04-19 16:32:05,053 INFO org.example.controllers.ProductController [http-nio-8080-exec-2] start to find products
+2023-04-19 16:32:05,054 INFO org.example.services.ProductService [http-nio-8080-exec-2] Find all products
+2023-04-19 16:32:05,057 INFO org.example.controllers.ProductController [http-nio-8080-exec-2] products founded ...
+2023-04-19 16:32:05,038 INFO org.example.controllers.ProductController [http-nio-8080-exec-8] start to find products
+2023-04-19 16:32:05,059 INFO org.example.services.ProductService [http-nio-8080-exec-8] Find all products
+2023-04-19 16:32:05,064 INFO org.example.controllers.ProductController [http-nio-8080-exec-8] products founded ...
+2023-04-19 16:32:09,034 INFO org.example.controllers.ProductController [http-nio-8080-exec-3] start to find products
+2023-04-19 16:32:09,034 INFO org.example.services.ProductService [http-nio-8080-exec-3] Find all products
+2023-04-19 16:32:09,038 INFO org.example.controllers.ProductController [http-nio-8080-exec-3] products founded ...
+2023-04-19 16:32:09,356 INFO org.example.controllers.ProductController [http-nio-8080-exec-5] start to find products
+2023-04-19 16:32:09,356 INFO org.example.services.ProductService [http-nio-8080-exec-5] Find all products
+2023-04-19 16:32:09,360 INFO org.example.controllers.ProductController [http-nio-8080-exec-5] products founded ...
+2023-04-19 16:32:09,365 INFO org.example.controllers.ProductController [http-nio-8080-exec-4] start to find products
+2023-04-19 16:32:09,365 INFO org.example.services.ProductService [http-nio-8080-exec-4] Find all products
+2023-04-19 16:32:09,368 INFO org.example.controllers.ProductController [http-nio-8080-exec-4] products founded ...
+2023-04-19 16:32:09,372 INFO org.example.controllers.ProductController [http-nio-8080-exec-6] start to find products
+2023-04-19 16:32:09,372 INFO org.example.services.ProductService [http-nio-8080-exec-6] Find all products
+2023-04-19 16:32:09,375 INFO org.example.controllers.ProductController [http-nio-8080-exec-6] products founded ...
+2023-04-19 16:32:12,350 INFO org.example.controllers.ProductController [http-nio-8080-exec-9] start to find products
+2023-04-19 16:32:12,350 INFO org.example.services.ProductService [http-nio-8080-exec-9] Find all products
+2023-04-19 16:32:12,353 INFO org.example.controllers.ProductController [http-nio-8080-exec-9] products founded ...
+2023-04-19 16:32:12,673 INFO org.example.controllers.ProductController [http-nio-8080-exec-10] start to find products
+2023-04-19 16:32:12,674 INFO org.example.services.ProductService [http-nio-8080-exec-10] Find all products
+2023-04-19 16:32:12,677 INFO org.example.controllers.ProductController [http-nio-8080-exec-10] products founded ...
+2023-04-19 16:32:12,681 INFO org.example.controllers.ProductController [http-nio-8080-exec-2] start to find products
+2023-04-19 16:32:12,682 INFO org.example.services.ProductService [http-nio-8080-exec-2] Find all products
+2023-04-19 16:32:12,684 INFO org.example.controllers.ProductController [http-nio-8080-exec-2] products founded ...
+2023-04-19 16:32:20,457 INFO org.example.controllers.ProductController [http-nio-8080-exec-8] start to find products
+2023-04-19 16:32:20,457 INFO org.example.services.ProductService [http-nio-8080-exec-8] Find all products
+2023-04-19 16:32:20,460 INFO org.example.controllers.ProductController [http-nio-8080-exec-8] products founded ...
+2023-04-19 16:32:20,776 INFO org.example.controllers.ProductController [http-nio-8080-exec-1] start to find products
+2023-04-19 16:32:20,776 INFO org.example.services.ProductService [http-nio-8080-exec-1] Find all products
+2023-04-19 16:32:20,779 INFO org.example.controllers.ProductController [http-nio-8080-exec-1] products founded ...
+2023-04-19 16:32:20,783 INFO org.example.controllers.ProductController [http-nio-8080-exec-3] start to find products
+2023-04-19 16:32:20,783 INFO org.example.services.ProductService [http-nio-8080-exec-3] Find all products
+2023-04-19 16:32:20,786 INFO org.example.controllers.ProductController [http-nio-8080-exec-3] products founded ...
+2023-04-19 16:32:21,980 INFO org.example.controllers.ProductController [http-nio-8080-exec-5] start to find products
+2023-04-19 16:32:21,982 INFO org.example.services.ProductService [http-nio-8080-exec-5] Find all products
+2023-04-19 16:32:21,984 INFO org.example.controllers.ProductController [http-nio-8080-exec-5] products founded ...
+2023-04-19 16:32:22,307 INFO org.example.controllers.ProductController [http-nio-8080-exec-4] start to find products
+2023-04-19 16:32:22,308 INFO org.example.services.ProductService [http-nio-8080-exec-4] Find all products
+2023-04-19 16:32:22,317 INFO org.example.controllers.ProductController [http-nio-8080-exec-4] products founded ...
+2023-04-19 16:32:22,321 INFO org.example.controllers.ProductController [http-nio-8080-exec-6] start to find products
+2023-04-19 16:32:22,322 INFO org.example.services.ProductService [http-nio-8080-exec-6] Find all products
+2023-04-19 16:32:22,325 INFO org.example.controllers.ProductController [http-nio-8080-exec-6] products founded ...
+2023-04-19 16:32:22,329 INFO org.example.controllers.ProductController [http-nio-8080-exec-7] start to find products
+2023-04-19 16:32:22,330 INFO org.example.services.ProductService [http-nio-8080-exec-7] Find all products
+2023-04-19 16:32:22,332 INFO org.example.controllers.ProductController [http-nio-8080-exec-7] products founded ...
+2023-04-19 16:32:22,337 INFO org.example.controllers.ProductController [http-nio-8080-exec-9] start to find products
+2023-04-19 16:32:22,337 INFO org.example.services.ProductService [http-nio-8080-exec-9] Find all products
+2023-04-19 16:32:22,339 INFO org.example.controllers.ProductController [http-nio-8080-exec-9] products founded ...
+2023-04-19 16:32:24,586 INFO org.example.controllers.ProductController [http-nio-8080-exec-10] start to find products
+2023-04-19 16:32:24,586 INFO org.example.services.ProductService [http-nio-8080-exec-10] Find all products
+2023-04-19 16:32:24,590 INFO org.example.controllers.ProductController [http-nio-8080-exec-10] products founded ...
+2023-04-19 16:32:24,594 INFO org.example.controllers.ProductController [http-nio-8080-exec-2] start to find products
+2023-04-19 16:32:24,595 INFO org.example.services.ProductService [http-nio-8080-exec-2] Find all products
+2023-04-19 16:32:24,597 INFO org.example.controllers.ProductController [http-nio-8080-exec-2] products founded ...
+2023-04-19 16:32:26,913 INFO org.example.controllers.ProductController [http-nio-8080-exec-8] start to find products
+2023-04-19 16:32:26,913 INFO org.example.services.ProductService [http-nio-8080-exec-8] Find all products
+2023-04-19 16:32:26,916 INFO org.example.controllers.ProductController [http-nio-8080-exec-8] products founded ...
+2023-04-19 16:32:26,919 INFO org.example.controllers.ProductController [http-nio-8080-exec-1] start to find products
+2023-04-19 16:32:26,920 INFO org.example.services.ProductService [http-nio-8080-exec-1] Find all products
+2023-04-19 16:32:26,923 INFO org.example.controllers.ProductController [http-nio-8080-exec-1] products founded ...
+2023-04-19 16:32:50,914 INFO org.example.controllers.ProductController [http-nio-8080-exec-5] start to find product: sdds 
+2023-04-19 16:32:50,914 INFO org.example.services.ProductService [http-nio-8080-exec-5] Find certain person
+2023-04-19 16:32:50,916 INFO org.example.controllers.ProductController [http-nio-8080-exec-5] end to find product: sdds
+2023-04-19 16:33:08,130 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler [SpringContextShutdownHook] Shutting down ExecutorService 'taskScheduler'
+2023-04-19 16:33:08,131 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
+2023-04-19 16:33:08,133 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [SpringContextShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-19 16:33:08,134 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-04-19 16:33:08,140 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown completed.
