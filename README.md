@@ -22,7 +22,7 @@ create table product(
 ### ! Not necessary to use json-server in this project !
 
 *not necessary
-# add via Postman couple of products
+# add via PSQL Terminal couple of products
 INSERT INTO product(content, state, count) VALUES('Chicken', 'ACTIVE', 1);
 INSERT INTO product(content, state, count) VALUES('Water', 'ACTIVE', 2);
 
